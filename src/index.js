@@ -4,12 +4,11 @@ import ReactDOM from 'react-dom';
 import fastclick from 'fastclick';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
-import './index.css';
+import { syncHistoryWithStore } from 'react-router-redux';
 import registerServiceWorker from './registerServiceWorker';
 import { store } from './redux/store';
 import routes from './routes';
-
-import { syncHistoryWithStore } from 'react-router-redux';
+import './index.css';
 
 const history = syncHistoryWithStore(browserHistory, store);
 

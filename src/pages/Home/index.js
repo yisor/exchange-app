@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <WingBlank>
-        <WhiteSpace />
+        <WhiteSpace style={{ flex: 1, display: 'flex',marginTop: 60 }}/>
         <Button
           type="primary"
           onClick={() => { this.props.login({ id: 1, name: '测试' }) }}>
