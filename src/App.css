@@ -1,0 +1,32 @@
+@import '~antd/dist/antd.css';
+yar
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header{
+  /* 我们希望 header 采用固定的高度，只占用必须的空间 */
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+  height: 50px;
+  color: white;
+  background-color: dodgerblue;
+}
+
+.main-content{
+  /* 将 flex-grow 设置为1，该元素会占用所有的可使用空间
+     而其他元素该属性值为0，因此不会得到多余的空间*/
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: auto;
+}
+
+.app-footer{
+  /* 和 header 一样，footer 也采用固定高度*/
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+  height: 50px;
+  color: white;
+  background-color: dodgerblue;
+}
