@@ -18,7 +18,6 @@ import About from './About';
 // ]
 
 const routeConfig = [
-    Home,
     Main,
     About
 ]

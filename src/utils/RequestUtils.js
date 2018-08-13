@@ -124,25 +124,5 @@ export default class RequestUtils {
         })
     })
   }
-
-  /**
-   * 获取URL字段参数
-   * @param {字段} name 
-   */
-  static getQueryString(name) {
-    let url = window.location.search;
-    console.log('------------' + url);
-    let obj = {};
-    if (url.indexOf("?") !== -1) {
-      let str = url.substr(1);
-      let strs = str.split("&");
-      for (let i = 0; i < strs.length; i++) {
-        obj[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
-      }
-      console.log('-----------' + name + obj[name]);
-      return obj[name];
-    }
-    return null;
-  }
 }
 
